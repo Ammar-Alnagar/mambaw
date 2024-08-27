@@ -307,3 +307,4 @@ class MambaLMHeadModel(nn.Module, GenerationMixin):
         config_path = os.path.join(save_directory, 'config.json')
         with open(config_path, 'w') as f:
             json.dump(self.config.__dict__, f, indent=4)
+
