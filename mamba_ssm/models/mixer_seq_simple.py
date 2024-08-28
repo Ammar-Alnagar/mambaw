@@ -40,6 +40,8 @@ def create_block(
     device=None,
     dtype=None,
 ):
+
+    #making sure the variables are not null 
     if ssm_cfg is None:
         ssm_cfg = {}
     if attn_layer_idx is None:
@@ -133,7 +135,7 @@ class MixerModel(nn.Module):
         device=None,
         dtype=None,
     ) -> None:
-        factory_kwargs = {"device": device, "dtype": dtype}
+        factory_kwargs = {"device": device, "dtype": dtype}  #invistigate the posibilty of making it run on cpu ?
         super().__init__()
         self.residual_in_fp32 = residual_in_fp32
 
