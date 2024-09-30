@@ -8,15 +8,11 @@ from pathlib import Path
 from packaging.version import parse, Version
 import platform
 import shutil
-
 from setuptools import setup, find_packages
 import subprocess
-
 import urllib.request
 import urllib.error
 from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
-
-
 import torch
 from torch.utils.cpp_extension import (
     BuildExtension,
