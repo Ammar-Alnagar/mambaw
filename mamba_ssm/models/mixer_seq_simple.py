@@ -1,16 +1,11 @@
-# Copyright (c) 2023, Albert Gu, Tri Dao.
-
 import math
 from functools import partial
 import json
 import os
 import copy
-
 from collections import namedtuple
-
 import torch
 import torch.nn as nn
-
 from mamba_ssm.models.config_mamba import MambaConfig
 from mamba_ssm.modules.mamba_simple import Mamba
 from mamba_ssm.modules.mamba2 import Mamba2
